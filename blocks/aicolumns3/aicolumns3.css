@@ -1,0 +1,57 @@
+
+.aicolumns3-wrapper > .aicolumns3 > div {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: space-between; /* Ensure elements are spaced out */
+    align-items: center; /* Center elements vertically */
+    padding: 20px; /* Add padding for spacing */
+    width: 100%; /* Ensure full width usage */
+}
+
+.aicolumns3-wrapper > .aicolumns3 > div > div {
+    display: flex;
+    flex-direction: row; /* Ensure heading and button are aligned horizontally */
+    align-items: center; /* Center heading vertically */
+    gap: 20px; /* Add space between elements */
+}
+
+.aicolumns3-wrapper h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    margin: 0; /* Remove default margins for alignment */
+}
+
+.aicolumns3-wrapper .button-container {
+    display: flex;
+    flex-direction: row; /* Ensure button is aligned horizontally */
+    justify-content: flex-end; /* Push button to the far right */
+    align-items: center; /* Center button vertically */
+    margin-left: auto; /* Ensure the button is aligned to the far right */
+}
+
+.aicolumns3-wrapper .button-container a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    background-color: transparent; /* Remove background color */
+}
+
+@media (max-width: 900px) {
+  .aicolumns3-wrapper > .aicolumns3 > div {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .aicolumns3-wrapper .button-container {
+    justify-content: flex-start; /* Reset alignment */
+    margin-left: 0; /* Reset margin */
+    margin-top: 10px; /* Add margin for spacing when stacked vertically */
+  }
+}

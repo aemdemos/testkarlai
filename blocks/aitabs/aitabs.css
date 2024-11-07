@@ -1,0 +1,65 @@
+
+/* Container for the entire block */
+.aitabs-wrapper .aitabs > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the items */
+    padding: 10px;
+    flex-direction: row; /* Ensure the main container items are side by side */
+}
+
+/* Left section styles (navigation items) */
+.aitabs-wrapper .aitabs ul {
+    display: flex;
+    gap: 20px; /* Adjust gap as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row; /* Ensure the navigation items are side by side */
+}
+
+.aitabs-wrapper .aitabs ul li {
+    position: relative;
+}
+
+.aitabs-wrapper .aitabs ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Change link color to black */
+    font-weight: bold; /* Ensure the font weight matches the original */
+    font-family: var(--body-font-family); /* Ensure font family matches */
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center; /* Vertically center the text within the list items */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Underline for the active item */
+.aitabs-wrapper .aitabs ul li a[href$="#support"]::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+}
+
+/* Right section button styles */
+.aitabs-wrapper .aitabs .button-container {
+    margin: 0;
+    display: flex;
+    align-items: center; /* Vertically center the button */
+}
+
+.aitabs-wrapper .aitabs .button-container .button {
+    border: 1px solid black;
+    border-radius: 20px; /* Ensure the radius matches the original */
+    padding: 10px 20px; /* Ensure the padding matches the original */
+    background: none; /* Ensure button background is transparent */
+    color: black; /* Change button text color to black */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center; /* Vertically center the button text */
+    cursor: pointer;
+    font-family: var(--body-font-family); /* Ensure font family matches */
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+}

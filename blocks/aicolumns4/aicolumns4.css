@@ -1,0 +1,45 @@
+
+.aicolumns4-wrapper {
+  display: flex;
+  justify-content: center; /* Center the block horizontally */
+  align-items: center; /* Center the block vertically */
+  padding: 20px; /* Add padding around the block if needed */
+}
+
+.aicolumns4 > div {
+  display: flex;
+  flex-direction: row; /* Arrange child divs side by side */
+  align-items: center; /* Center items vertically */
+  gap: 24px; /* Add gap between text and button */
+}
+
+.aicolumns4 h2 {
+  margin: 0; /* Remove default margin to ensure proper alignment */
+  flex-shrink: 0; /* Prevent the text from shrinking */
+}
+
+.button-container {
+  display: flex;
+  align-items: center; /* Center the button vertically */
+}
+
+.button-container a.button {
+  display: inline-block;
+  padding: 10px 20px; /* Add padding inside the button */
+  border: 1px solid #e0e0e0; /* Adjust border color to a lighter shade */
+  border-radius: 20px; /* Make the corners rounded */
+  text-align: center; /* Center the text within the button */
+  text-decoration: none; /* Remove underline from the link */
+  background-color: transparent; /* Make the background transparent */
+  color: black; /* Set the text color to black */
+  line-height: 1.5; /* Ensure text is vertically centered within the button */
+  flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+@media (min-width: 900px) {
+  .aicolumns4 > div {
+    align-items: center;
+    flex-direction: row; /* Ensure flex direction is row on larger screens */
+    gap: 24px;
+  }
+}

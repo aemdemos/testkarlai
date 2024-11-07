@@ -1,0 +1,94 @@
+
+.aicolumns2-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 20px;
+}
+
+.aicolumns2 > div {
+    display: flex;
+    flex-direction: row; /* Ensuring side-by-side layout */
+    flex: 1 1 100%;
+    gap: 24px;
+}
+
+.aicolumns2 > div > div {
+    flex: 1 1 calc(33.333% - 24px);
+    display: flex;
+    flex-direction: column; /* Ensuring proper containment within each block */
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.aicolumns2 picture {
+    display: block;
+    text-align: right; /* Align image to the right */
+    margin-bottom: 20px; /* Add spacing below the image */
+}
+
+.aicolumns2 img {
+    width: auto;
+    max-width: 100%; /* Ensure image does not overflow and is aligned to the right */
+    height: auto;
+    display: inline-block;
+}
+
+.aicolumns2 h3,
+.aicolumns2 h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.aicolumns2 p,
+.aicolumns2 ul {
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.aicolumns2 ul {
+    padding-left: 20px;
+}
+
+.aicolumns2 ul li {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 900px) {
+    .aicolumns2-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aicolumns2 > div {
+        flex: 1 1 100%;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .aicolumns2 > div > div {
+        flex: 1 1 calc(33.333% - 24px);
+        order: unset;
+    }
+}

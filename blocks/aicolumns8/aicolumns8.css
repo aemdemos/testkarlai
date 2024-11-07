@@ -1,0 +1,52 @@
+
+.aicolumns8-wrapper > .aicolumns8 > div {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+  flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  flex-direction: row; /* Ensure elements are side by side */
+  width: 100%; /* Ensure full width is used */
+}
+
+.aicolumns8-wrapper > .aicolumns8 > div > div {
+  flex: 1; /* Ensure equal width for columns */
+  padding: 0 20px; /* Adds horizontal padding to each column */
+  min-width: 200px; /* Ensure columns don't get too narrow on small screens */
+  max-width: 33.333%; /* Ensure columns don’t exceed one-third of the container width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.aicolumns8-wrapper h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduce spacing between heading and list */
+}
+
+.aicolumns8-wrapper ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.aicolumns8-wrapper li {
+  margin-bottom: 5px; /* Reduce spacing between list items */
+}
+
+.aicolumns8-wrapper a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent element */
+}
+
+.aicolumns8-wrapper a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media (min-width: 900px) {
+  .aicolumns8-wrapper > .aicolumns8 > div {
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Maintain gap between columns */
+  }
+
+  .aicolumns8-wrapper > .aicolumns8 > div > div {
+    flex: 1;
+  }
+}

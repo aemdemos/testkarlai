@@ -1,0 +1,55 @@
+
+.aicolumns5-wrapper > .aicolumns5 > div {
+  display: flex;
+  flex-direction: row; /* Ensure row direction to align sections horizontally */
+  justify-content: space-between; /* Ensure even spacing between columns */
+  gap: 40px; /* Adjust gap to better match the original image */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div {
+  display: flex;
+  flex-direction: column; /* Ensure column direction for elements within each section */
+  flex: 1; /* Ensure each column takes equal space */
+  margin: 0 10px; /* Adjust margin for additional spacing */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div > h3 {
+  margin-bottom: 16px; /* Add margin below headings to separate from lists */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div > ul {
+  list-style-type: disc; /* Ensure bullet points */
+  padding-left: 20px; /* Indent bullet points */
+  margin: 0; /* Remove default margin */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div > ul > li {
+  margin-bottom: 8px; /* Add margin below list items for spacing */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div > .button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add margin to space out the button */
+}
+
+.aicolumns5-wrapper > .aicolumns5 > div > div > .button-container > .button {
+  display: inline-block; /* Ensure the button is an inline-block element */
+  padding: 10px 20px; /* Add padding inside the button */
+  border: 1px solid #000; /* Add border to the button */
+  border-radius: 20px; /* Round the button corners */
+  text-decoration: none; /* Remove underline from button text */
+  background-color: white; /* Ensure the button has a white background */
+  color: black; /* Ensure the button text is black */
+}
+
+@media (min-width: 900px) {
+  .aicolumns5-wrapper > .aicolumns5 > div {
+    flex-direction: row; /* Ensure row direction on larger screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .aicolumns5-wrapper > .aicolumns5 > div > div {
+    flex: 1; /* Ensure columns take equal space */
+  }
+}

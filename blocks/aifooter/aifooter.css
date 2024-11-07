@@ -1,0 +1,34 @@
+
+.aifooter-wrapper {
+    background-color: white;
+    padding: 20px; /* Increase padding to ensure space around the content */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.aifooter > div {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    gap: 10px; /* Adjust spacing between the elements */
+    max-width: 800px; /* Set a max-width for better centering */
+}
+
+.aifooter p {
+    margin: 0; /* Remove default margins */
+    line-height: 1.6; /* Improve readability */
+    font-family: Arial, sans-serif; /* Ensuring a modern, sans-serif font */
+}
+
+.aifooter p:first-of-type {
+    font-size: 16px; /* Slightly larger font size for the first paragraph */
+    margin-bottom: 10px; /* Add margin to separate the paragraphs */
+}
+
+.aifooter p:last-of-type {
+    font-size: 14px; /* Slightly smaller font size for the second paragraph */
+    margin-top: 10px; /* Ensure separation from the first paragraph */
+}
+
+.aifooter a {
+    text-decoration: underline; /* Underline the hyperlink */
+}

@@ -1,0 +1,58 @@
+
+.aicolumns7-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.aicolumns7 {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aicolumns7 > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  flex-wrap: wrap;
+}
+
+/* Title Styling */
+.aicolumns7 h2#things-you-should-know {
+  font-size: 30px; /* Increased for more prominence */
+  font-weight: bold;
+  margin-bottom: 30px; /* Increased bottom margin for better spacing */
+  width: 100%; /* Ensure title spans full width */
+}
+
+/* List Item Styling */
+.aicolumns7 ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Ensure list spans full width */
+}
+
+.aicolumns7 ul > li {
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  line-height: 1.8; /* Increased line height for readability */
+  padding-left: 30px; /* Increased padding for better indentation */
+}
+
+/* Hyperlinks */
+.aicolumns7 ul > li a {
+  color: #0073e6;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Bolder underline for better visibility */
+}
+
+/* Footnotes */
+.aicolumns7 ul > li sup {
+  font-size: 0.7em; /* Slightly smaller for better positioning */
+}
+
+/* Subheadings within list items */
+.aicolumns7 ul > li b {
+  font-size: 1.4em; /* Increased for more distinction */
+  font-weight: bold;
+  margin-top: 15px; /* Added margin for better spacing */
+}

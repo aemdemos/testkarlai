@@ -1,0 +1,55 @@
+
+.aicolumns6-wrapper {
+  padding: 20px;
+}
+
+.aicolumns6 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aicolumns6 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px; /* Add gap for better spacing */
+}
+
+.aicolumns6 > div > div {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0;
+  flex: 1;
+  max-width: 32%; /* Adjust width for better fit */
+  box-sizing: border-box;
+}
+
+.aicolumns6 h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3b63fb; /* Ensure the title color matches */
+}
+
+.aicolumns6 p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .aicolumns6 {
+    flex-direction: column;
+  }
+
+  .aicolumns6 > div {
+    flex-direction: column;
+  }
+
+  .aicolumns6 > div > div {
+    max-width: 100%;
+    margin: 10px 0; /* Update margin for better spacing */
+  }
+}
