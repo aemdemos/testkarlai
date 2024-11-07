@@ -1,0 +1,26 @@
+
+.aicolumns3-wrapper > .aicolumns3 > div {
+  display: flex;
+  flex-direction: row; /* Ensure items are side-by-side */
+  align-items: center;
+  justify-content: space-between; /* Distribute space between items */
+  padding: 20px 0; /* Add padding to adjust spacing if necessary */
+}
+
+.aicolumns3-wrapper .aicolumns3 h2 {
+  font-weight: bold;
+  margin-right: 20px; /* Adjust space between text and button */
+  font-size: 1.75em; /* Ensure the font size matches the original */
+}
+
+.aicolumns3-wrapper .button-container a {
+  display: inline-block;
+  background-color: white; /* Ensure background color is white */
+  border: 1px solid #000; /* Ensure border is black */
+  border-radius: 20px; /* Maintain rounded corners */
+  padding: 15px 40px; /* Adjust padding inside the button */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Ensure text color is black */
+  font-size: 1.1em; /* Ensure font size matches */
+}

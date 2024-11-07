@@ -1,0 +1,62 @@
+
+.aitabs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aitabs.block > div > div {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.aitabs.block ul, .aitabs.block .button-container {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  align-items: center;
+}
+
+.aitabs.block ul {
+  gap: 5px; /* Reduce gap to match the original more closely */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aitabs.block ul li {
+  font-weight: bold;
+}
+
+.aitabs.block ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center; /* Ensure vertical alignment of text */
+  padding: 0 10px; /* Add padding to links for better spacing */
+}
+
+.aitabs.block ul li a[title="Support"] {
+  border-bottom: 3px solid yellow; /* Adjust thickness of underline */
+  padding-bottom: 2px; /* Adjust spacing for better alignment */
+}
+
+.aitabs.block .button-container {
+  margin-left: auto;
+}
+
+.aitabs.block .button {
+  padding: 10px 25px; /* Adjust padding as needed */
+  border: 1px solid gray; /* Adjust border color as needed */
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

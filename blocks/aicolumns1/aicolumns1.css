@@ -1,0 +1,85 @@
+
+.aicolumns1-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.aicolumns1 > div {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for columns */
+  justify-content: space-between;
+  gap: 24px; /* Consistent spacing between columns */
+  max-width: 1200px;
+}
+
+.aicolumns1 > div > div {
+  flex: 1; /* Ensure columns take equal space */
+  background: white; /* Background color for columns */
+  padding: 20px; /* Padding inside columns */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for distinction */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Column layout for content within each card */
+  align-items: flex-start; /* Align items to the start to match left alignment */
+}
+
+.aicolumns1 > div > div h3, .aicolumns1 > div > div h2 {
+  margin-top: 20px; /* Spacing for headers */
+}
+
+.aicolumns1 > div > div ul {
+  list-style: disc inside; /* List style for bullet points */
+  padding-left: 0;
+}
+
+.aicolumns1 > div > div .button-container {
+  text-align: center; /* Center align buttons */
+  margin: 20px 0; /* Spacing for buttons */
+  align-self: stretch; /* Ensure buttons are aligned horizontally */
+}
+
+.aicolumns1 > div > div .button {
+  background: #ffcc00; /* Button background color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Button text color */
+  border-radius: 5px; /* Rounded corners for buttons */
+  display: inline-block; /* Ensure block display */
+  width: 100%; /* Ensure buttons take full width */
+  text-align: center; /* Center text within buttons */
+}
+
+.aicolumns1 img {
+  width: auto; /* Adjust width as needed */
+  max-width: 100%; /* Ensure images do not exceed column width */
+  display: block; /* Ensure block display */
+  align-self: flex-start; /* Align images to the start */
+}
+
+.aicolumns1 > div > div picture {
+  display: block;
+  margin-bottom: 20px; /* Spacing below images */
+  align-self: flex-start; /* Align pictures to the start */
+}
+
+/* Ensure the last section fills the remaining space */
+.aicolumns1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 900px) {
+  .aicolumns1 > div {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .aicolumns1 > div > div {
+    flex: 1;
+    order: unset; /* Remove order changes */
+  }
+}

@@ -1,0 +1,46 @@
+
+.aicolumns8-wrapper > .aicolumns8 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.aicolumns8-wrapper > .aicolumns8 > div > div {
+  flex: 1;
+  margin-right: 15px; /* Slightly reduce space between columns */
+}
+
+.aicolumns8-wrapper > .aicolumns8 > div > div:last-child {
+  margin-right: 0;
+}
+
+.aicolumns8-wrapper h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.aicolumns8-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Ensure no extra margin is added */
+}
+
+.aicolumns8-wrapper li {
+  margin-bottom: 5px; /* Adjust vertical spacing for consistency */
+}
+
+@media (max-width: 900px) {
+  .aicolumns8-wrapper > .aicolumns8 > div {
+    flex-direction: column;
+  }
+
+  .aicolumns8-wrapper > .aicolumns8 > div > div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .aicolumns8-wrapper > .aicolumns8 > div > div:last-child {
+    margin-bottom: 0;
+  }
+}

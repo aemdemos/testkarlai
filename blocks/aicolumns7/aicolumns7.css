@@ -1,0 +1,67 @@
+
+.aicolumns7-wrapper {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aicolumns7.block {
+  width: 100%;
+}
+
+/* Flexbox layout for main content */
+.aicolumns7 > div {
+  display: flex;
+  flex-direction: column; /* Ensure title is positioned at the top */
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* Nested Flexbox for inner divs */
+.aicolumns7 > div > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout within each section */
+  flex: 1;
+  gap: 24px;
+}
+
+/* Title Section */
+.aicolumns7 h2 {
+  font-size: 24px; /* Increased font size for prominence */
+  font-weight: bold; /* Bold weight for prominence */
+  margin-bottom: 20px;
+  text-align: left; /* Ensure the title is left-aligned */
+}
+
+/* Content Section */
+.aicolumns7 ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.aicolumns7 ul li {
+  margin-bottom: 20px; /* Increase spacing between list items */
+  line-height: 1.6;
+}
+
+.aicolumns7 ul li a {
+  color: var(--link-color); /* Distinct color for hyperlinks */
+  text-decoration: underline; /* Underline hyperlinks */
+}
+
+.aicolumns7 ul li a:hover {
+  color: var(--link-hover-color); /* Change color on hover for clarity */
+}
+
+/* Media query for larger screens */
+@media (min-width: 900px) {
+  .aicolumns7 > div {
+    flex-direction: column; /* Ensure column layout on larger screens */
+    align-items: flex-start;
+  }
+
+  .aicolumns7 > div > div {
+    flex-direction: row; /* Ensure side-by-side layout within each section */
+    gap: 24px;
+  }
+}

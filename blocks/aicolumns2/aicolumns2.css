@@ -1,0 +1,117 @@
+
+.aicolumns2-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 20px;
+}
+
+.aicolumns2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.aicolumns2 > div > div {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+}
+
+.aicolumns2 picture {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.aicolumns2 h3,
+.aicolumns2 h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.aicolumns2 p {
+  margin-bottom: 10px;
+}
+
+.aicolumns2 ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.aicolumns2 .button-container {
+  text-align: center;
+  margin-top: auto;
+}
+
+.aicolumns2 .button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.aicolumns2 .button:hover {
+  background-color: gold;
+}
+
+.aicolumns2 .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  transform: rotate(45deg);
+}
+
+.aicolumns2 .badge-1 {
+  display: none;
+}
+
+.aicolumns2 .badge-2,
+.aicolumns2 .badge-3 {
+  display: block;
+}
+
+/* Adjusting the additional sections */
+.aicolumns2 .additional-sections {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.aicolumns2 .additional-sections p,
+.aicolumns2 .additional-sections h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aicolumns2 .additional-sections .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.aicolumns2 .button-container > .button {
+  width: 100%;
+  max-width: 200px;
+}

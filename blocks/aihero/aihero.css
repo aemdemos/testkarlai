@@ -1,0 +1,94 @@
+
+.aihero-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  max-width: unset;
+}
+
+.aihero {
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  padding: 0;
+  position: relative;
+}
+
+.aihero > div:first-child {
+  flex: 1;
+  background-color: white;
+  padding: 40px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aihero > div:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: yellow;
+}
+
+.aihero > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aihero > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.aihero h1 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.aihero p {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.aihero a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.aihero a:first-of-type {
+  background-color: yellow;
+  border: none;
+}
+
+.aihero picture {
+  width: 100%;
+  height: auto;
+}
+
+.aihero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .aihero > div:first-child {
+    padding: 40px 32px;
+  }
+}

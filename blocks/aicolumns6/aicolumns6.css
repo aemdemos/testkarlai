@@ -1,0 +1,41 @@
+
+.aicolumns6-wrapper > .aicolumns6 > div {
+  display: flex;
+  flex-direction: row; /* Ensure cards are side by side */
+  justify-content: space-between; /* Ensure equal spacing between cards */
+  flex-wrap: nowrap; /* Prevent wrapping of cards */
+}
+
+.aicolumns6-wrapper > .aicolumns6 > div > div {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px; /* Adjust padding as needed */
+  flex: 1 1 30%; /* Adjust flex basis to ensure three cards fit in a row with margins */
+  margin: 10px; /* Adjust margin for spacing between cards */
+  box-sizing: border-box; /* Ensure padding and border are included in width and height calculations */
+  display: flex;
+  flex-direction: column; /* Ensure content inside each card is stacked vertically */
+}
+
+.aicolumns6-wrapper > .aicolumns6 h3 {
+  font-weight: bold;
+  margin-bottom: 10px; /* Adjust spacing between title and paragraph */
+  color: var(--text-color); /* Change title color to black */
+  font-size: var(--heading-font-size-m); /* Ensure consistent font size */
+}
+
+.aicolumns6-wrapper > .aicolumns6 p {
+  margin: 0; /* Removes default paragraph margin */
+  color: var(--text-color); /* Ensure paragraph text color is consistent */
+  flex-grow: 1; /* Ensure paragraph text takes available space */
+}
+
+@media (max-width: 900px) {
+  .aicolumns6-wrapper > .aicolumns6 > div {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+
+  .aicolumns6-wrapper > .aicolumns6 > div > div {
+    max-width: 100%; /* Ensure cards take full width on smaller screens */
+  }
+}

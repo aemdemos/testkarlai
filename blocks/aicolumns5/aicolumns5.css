@@ -1,0 +1,61 @@
+
+.aicolumns5-3-cols > div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: flex-start; /* Ensure alignment to the top */
+}
+
+/* Individual column styling */
+.aicolumns5-3-cols > div > div {
+  display: flex;
+  flex-direction: column; /* Ensure elements inside each column are positioned correctly */
+  flex: 1;
+}
+
+/* Title styling */
+.aicolumns5-3-cols h3 {
+  font-weight: bold;
+  margin-bottom: 10px; /* Adjust margin as needed */
+  font-size: 1em; /* Adjust font size to match original */
+}
+
+/* List styling */
+.aicolumns5-3-cols ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0; /* Remove default margin */
+}
+
+/* Link styling */
+.aicolumns5-3-cols ul a {
+  color: #0066cc; /* Adjust link color to match original */
+  text-decoration: none;
+}
+
+/* Button styling */
+.aicolumns5-3-cols .button-container {
+  margin-top: 20px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center; /* Center the button within the column */
+}
+
+.aicolumns5-3-cols .button {
+  padding: 8px 16px; /* Adjust padding to match original */
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f0f0f0; /* Adjust background color to match original */
+  border: 1px solid #ccc; /* Adjust border color to match original */
+  color: #000; /* Adjust text color to match original */
+  font-size: 0.875em; /* Adjust font size to match original */
+  width: 100%; /* Make button span the width of the container */
+  max-width: 300px; /* Optional: limit the maximum width of the button */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Additional Adjustments */
+.aicolumns5-3-cols {
+  padding: 20px; /* Add padding around the block */
+  background-color: #ffffff; /* Ensure background color matches original */
+}

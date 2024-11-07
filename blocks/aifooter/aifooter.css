@@ -1,0 +1,28 @@
+
+.aifooter-wrapper {
+  padding: 20px; /* Increase padding for more white space */
+  font-family: Arial, sans-serif; /* Ensure a consistent font */
+}
+
+.aifooter.block {
+  display: block; /* Ensure block-level display */
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center align the block */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.aifooter.block > div {
+  display: block;
+  width: 100%;
+}
+
+.aifooter.block p {
+  margin: 0 0 30px; /* Increase bottom margin between paragraphs */
+  line-height: 1.6; /* Increase line height for readability */
+  font-size: 14px; /* Set a comfortable font size */
+}
+
+.aifooter.block a {
+  text-decoration: underline; /* Underline for hyperlink */
+  color: #0073e6; /* Example color for the link */
+}

@@ -1,0 +1,49 @@
+
+.aicolumns4-wrapper .aicolumns4 {
+  display: flex;
+  justify-content: center; /* Center the elements horizontally within the container */
+  align-items: center; /* Center the elements vertically within the container */
+}
+
+.aicolumns4-wrapper .aicolumns4 > div {
+  display: flex;
+  flex-direction: row; /* Align elements side by side */
+  align-items: center; /* Center elements vertically */
+}
+
+.aicolumns4-wrapper .aicolumns4 > div > div {
+  margin-right: 20px; /* Add space between the text and the button */
+}
+
+.aicolumns4-wrapper .button-container {
+  display: flex;
+  align-items: center; /* Center the button vertically within its container */
+}
+
+.aicolumns4-wrapper .button-container p {
+  margin: 0; /* Remove default margin from the paragraph */
+}
+
+.aicolumns4-wrapper .button {
+  padding: 5px 15px; /* Adjust padding to make the button smaller */
+  border: 1px solid #ccc; /* Add a border to the button */
+  border-radius: 20px; /* Round the corners of the button */
+  background-color: transparent; /* Make the background transparent */
+  color: inherit; /* Use inherited color for text */
+  text-align: center; /* Center the text within the button */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 16px; /* Adjust font size to match the original button */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Ensure the height adjusts to content */
+  white-space: nowrap; /* Prevent text from wrapping */
+  line-height: 1; /* Adjust line height for better vertical alignment */
+}
+
+@media (min-width: 900px) {
+  .aicolumns4-wrapper .aicolumns4 > div {
+    gap: 24px; /* Add gap between elements for larger screens */
+    flex-direction: row; /* Ensure flex direction is row for larger screens */
+  }
+}
